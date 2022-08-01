@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Практика. JS в браузере" id="8b7b8c8f-4630-4ef5-b44b-60697cbe0ed6">
+  <scoring group="exercise" passedTestsScore="0" codeReviewScore="100"/>
+  <defaultIncludeCodeFile>hello.js</defaultIncludeCodeFile>
+  <markdown>
+    1. [Скачай проект](src/hometask9.zip)
+    2. Выполни задания в файле tasks.js
+    3. Проверяй себя, открывая `index.html` в браузере и проверяя, что поведение совпадает с ожидаемым в заданиях.
+    4. Когда закончишь, вставь содержимое tasks.js в окно задания и отправляй на проверку
+  </markdown>
+  <exercise.file>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <initialCode> // Вставь сюда содержимое файла tasks.js</initialCode>
+    <expected>hello</expected>
+    <solution>solution</solution>
+  </exercise.file>
+</slide.exercise>

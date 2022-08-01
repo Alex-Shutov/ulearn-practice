@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Теория" id="040e1b85-2b11-43b7-8206-614d5700e037">
+  <markdown>
+    Для работы с данными нужно знать не только базовый синтаксис, но и методы конкретных типов данных.
+    В этой части ты изучишь методы и свойства строк, чисел, массивов, объектов и дат.
+
+    В основном будем опираться на тему [Типы данных](http://learn.javascript.ru/data-types) и тему [Объекты:
+    основы](http://learn.javascript.ru/object-basics)
+  </markdown>
+</slide>

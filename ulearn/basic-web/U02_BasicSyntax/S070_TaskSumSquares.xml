@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="5703beaa-ab8f-49d1-aaac-b09213909531" title="Практика. Сумма квадратов"
+                xmlns="https://ulearn.me/schema/v2">
+    <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+    <markdown>
+      Напиши функцию, которая принимает на вход границы диапазона чисел (нижнюю - min, и верхнюю - max) и возвращает
+      сумму квадратов всех чисел, входящих в диапазон
+
+      Например:
+
+      (5,6) → (25 + 36) → 61
+
+      (1,4) → (1 + 4 + 9 + 16) → 30
+    </markdown>
+    <exercise.universal exerciseDirName="src/06_sumSquares" noStudentZip="true">
+        <checkForPlagiarism>false</checkForPlagiarism>
+        <hideSolutions>true</hideSolutions>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <userCodeFile>task.js</userCodeFile>
+        <includePathForChecker>../TestsRunner</includePathForChecker>
+        <dockerImageName>js-sandbox</dockerImageName>
+        <run>node docker-test-runner.mjs</run>
+        <region>Task</region>
+    </exercise.universal>
+</slide.exercise>

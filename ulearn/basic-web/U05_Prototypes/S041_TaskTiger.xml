@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide.exercise id="8884e3c7-4867-494b-969d-492e728dda00" title="Практика. Тигр" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Перепиши функцию `Tiger` на аналогичный класс (с ключевым словом `class`) с таким же названием.
+
+Не забудь удалить исходную функцию.
+  </markdown>
+  <exercise.universal exerciseDirName="src/41_tiger" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

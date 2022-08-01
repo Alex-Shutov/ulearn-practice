@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<slide.exercise id="41c3c891-0240-4f05-bef1-1bc37fdb5765" title="Практика. Выборка" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, выбирающую и возвращающую случайное значение из переданного ей массива</markdown>
+  <exercise.universal exerciseDirName="src/02_sample" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

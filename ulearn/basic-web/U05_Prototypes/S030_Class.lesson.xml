@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Классы" id="f95f3ab9-b667-4088-998f-961087c6c3a9">
+  <markdown>
+    Синтаксис классов, появившийся в ES2015 и доработанный в последующих версиях,
+    сокращает код и улучшает читабельность всех приведенных ранее примеров.
+    Но в основе все равно лежит прототипное наследование.
+
+    ## Определение простого типа
+
+    <code language="javascript">
+      class Point {
+        // На самом деле описываем функцию Point
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+        }
+
+        // Так описываются методы, которые попадут в прототип
+        getLength() {
+          return Math.sqrt(this.x * this.x + this.y * this.y);
+        }
+      }
+
+      // Использование такое же
+      const p1 = new Point(1, 2);
+      const p2 = new Point(2, 3);
+      const l1 = p1.getLength();
+      const l2 = p2.getLength();
+    </code>
+
+    ## Наследование
+
+    <code language="javascript">
+      class Duck {
+        constructor(name) {
+          this.name = name;
+        }
+
+        fly() {
+          console.log(`${this.name} flies away...`);
+        }
+
+        quack() {
+          console.log(`${this.name} quacks!`);
+        }
+      }
+
+      // extends связывает два типа
+      class GizmoDuck extends Duck {
+        constructor(name) {
+          // Вызов родительского конструктора
+          super(name);
+          this.superPower = true;
+        }
+
+        // Свойства объекта можно определять вне конструктора
+        // Нет, useLaser не попадет в прототип,
+        // а будет у каждого объекта свой!
+        useLaser = () => {
+          console.log('whp...whp...');
+        };
+
+        fly() {
+          // Вызов метода из родителя
+          super.fly();
+          console.log('with super speed!');
+        }
+      }
+
+      const donald = new Duck('Donald');
+      const launchpad = new GizmoDuck('Launchpad');
+    </code>
+
+    ## Вычисляемые свойства и статические члены
+
+    <code language="javascript">
+      class FamilyMember {
+        constructor(lastName, firstName) {
+          this.lastName = lastName;
+          this.firstName = firstName
+          // Тут все по-старому, но и нужно редко
+          Object.defineProperty(this, 'age', {
+            value: 18,
+            writable: false, // запрет изменения
+            configurable: false // запрет удаления
+          });
+        }
+
+        get fullName() {
+          return this.firstName + ' ' + this.lastName;
+        }
+
+        // Сеттер и геттер одного свойства определяются отдельно
+        set fullName(value) {
+          const split = value.split(' ');
+          this.firstName = split[0];
+          this.lastName = split[1];
+        }
+
+        getMoney(amount) {
+          // К статическим членам приходится обращаться
+          // через имя функции-конструктора
+          // даже внутри динамических методов типа.
+          if (amount > FamilyMember.budget) {
+            amount = FamilyMember.budget;
+          }
+          FamilyMember.budget -= amount;
+          return amount;
+        }
+
+        // Так описываются свойства,
+        // которые попадут в функцию-конструктор
+        static budget = 0;
+
+        // Так описываются методы,
+        // которые попадут в функцию-конструктор
+        static addMoney(amount) {
+          // В статическом методе можно обращаться
+          // к статическим свойствам через this,
+          // потому что все статические члены лежат в функции-конструкторе
+          this.budget += amount;
+        }
+      }
+
+      const m1 = new FamilyMember('Smith', 'John');
+      const m2 = new FamilyMember('Smith', 'Jane');
+      FamilyMember.addMoney(1000);
+      m2.getMoney(2000);
+    </code>
+  </markdown>
+</slide>

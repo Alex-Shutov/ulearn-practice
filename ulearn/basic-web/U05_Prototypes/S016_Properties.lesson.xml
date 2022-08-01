@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Конфигурация свойств" id="047be72f-2b4b-4033-8f28-50b8036747ea">
+  <markdown>
+    Функции и данные, которые хранятся в объектах — это все свойства.
+    Обычно свойства хранят некоторые значения и ведут себя как поля:
+
+    <code language="javascript">
+      function FamilyMember(lastName, firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+      }
+    </code>
+
+    Но можно определить вычисляемые свойства:
+
+    <code language="javascript">
+      function FamilyMember(lastName, firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        // Это называется дескриптор доступа
+        Object.defineProperty(this, 'fullName', {
+          get: function() {
+            return this.firstName + ' ' + this.lastName;
+          },
+
+          set: function(value) {
+            const split = value.split(' ');
+            this.firstName = split[0];
+            this.lastName = split[1];
+          }
+        });
+      }
+    </code>
+
+    Либо сконфигурировать свойства со значениями:
+
+    <code language="javascript">
+      function FamilyMember(lastName, firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        // Это называется дескриптор данных
+        Object.defineProperty(this, 'age', {
+          value: 18,
+          writable: false, // запрет изменения
+          configurable: false // запрет удаления
+        });
+      }
+    </code>
+  </markdown>
+</slide>

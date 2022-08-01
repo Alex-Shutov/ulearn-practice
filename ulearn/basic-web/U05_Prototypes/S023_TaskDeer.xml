@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<slide.exercise id="135785f6-77dd-4bd6-b3b0-7677c03b0545" title="Практика. Олень" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Создай функцию-конструктор для северного оленя (`NorthReindeer`).
+
+Конструктор принимает поля `name` и `owner` и должен записать их в одноименные поля экземпляра класса северных оленей.
+Северный олень должен унаследовать поля и методы от обычного оленя (`deer`).
+Экземпляр северного оленя должен иметь поле `canSleepInSnow` равное `true`.
+Экземпляр северного оленя должен иметь поле `habitat` со значением `'tundra'`.
+
+_Обрати внимание: использование ключевого слова `class` запрещено. Наследование нужно реализовывать через прототипы._
+  </markdown>
+  <exercise.universal exerciseDirName="src/23_deer" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

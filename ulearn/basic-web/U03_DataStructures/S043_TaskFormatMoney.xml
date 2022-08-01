@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<slide.exercise id="cf6adf30-8164-42be-bff5-806d354dfe19" title="Практика. Форматирование денег" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Напиши функцию, форматирующую число в «денежный формат»:
+
+* разделитель — запятая;
+* два знака после запятой;
+* между каждыми тремя разрядами тонкая шпация - `' '`, читать о тонкой шпации [тут](https://habr.com/post/23250/), или [тут](https://en.wikipedia.org/wiki/Thin_space)
+
+О правильном форматировании чисел читать [тут](https://bureau.ru/bb/soviet/20170620/) и [тут](https://guides.kontur.ru/controls/currency/)
+  </markdown>
+  <exercise.universal exerciseDirName="src/08_formatMoney" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

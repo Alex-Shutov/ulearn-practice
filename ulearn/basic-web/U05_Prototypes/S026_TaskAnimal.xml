@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<slide.exercise id="bbcf9d26-cbde-4c67-bd45-e6ce813cf881" title="Практика. Хвостатые" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Некоторые студенты похожи на ящериц.
+
+xxx: Вот скажи мне, я похож на ящерицу?  
+yyy: нет конечно.  
+xxx: тогда почему, когда я по учёбе отбрасываю один хвост, у меня тут же вырастает другой?  
+
+Сделай так, чтобы ящерица унаследовала все поля от животных.
+
+У ящерицы должно быть поле `hasTail` равное `true` и
+метод `dropTail`, который устанавливает поле `hasTail` равным `false`,
+метод `wait`, который устанавливает поле `hasTail` равным `true`.
+
+У студента должно быть поле `name` значение которого берется из аргумента функции.
+Студент должен унаследовать все поля от животных и методы от ящерицы.
+
+Конструкторы студента и ящерицы должны вызывать конструктор `Animal` с правильными аргументами:
+
+- у ящерицы 4 ноги, у студента — 2
+- у ящерицы `title` `'Lizard'`, у студента — `'Homo Sapiens'`
+
+_Обрати внимание: использование ключевого слова `class` запрещено. Наследование нужно реализовывать через прототипы._
+   </markdown>
+  <exercise.universal exerciseDirName="src/26_animal" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

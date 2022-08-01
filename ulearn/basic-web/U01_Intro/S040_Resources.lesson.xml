@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Ресурсы для изучения" id="c4ef6da1-406d-4ae6-9294-b92181f9bd09">
+  <markdown>
+    Куда идти за дополнительной информацией:
+
+    1. Лучший учебник по JS на русском — [learn.javascript.ru](http://learn.javascript.ru/).
+    2. А лучший справочник по свойствам, методам и всему, связанному с работой браузера —
+    [Mozilla Developer Network](https://developer.mozilla.org/) (он же MDN).
+    3. Лучшая книга для глубокого погружения в то, как на самом деле работает JS —
+    [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
+    ([русский перевод](https://github.com/azat-io/you-dont-know-js-ru))
+
+    Большинство ссылок на теорию будут на learn.javascript.ru и на MDN.
+  </markdown>
+</slide>

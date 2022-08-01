@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<slide.exercise id="b79ff72a-e4b3-4a63-9c8f-562ab2feb92b" title="Практика. Одалживаем метод"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Напиши функции, которые возвращают результат вызова метода `use` из прошлой функции,
+    в контексте нового объекта `{colorName: 'серо-буро-малиновый в крапинку'}`.
+    Сделай это следующими путями:
+
+     1. Добавив к этому объекту метод `use` (который надо позаимствовать из результата вызова функции `createColor`)
+     2. Воспользовавшись методом `call`
+     3. Воспользовавшись методом `bind`
+  </markdown>
+  <exercise.universal exerciseDirName="src/06_borrow" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

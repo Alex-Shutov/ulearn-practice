@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Практика. Разметка" id="ba38e51c-0978-4c3e-a86c-737020fc0d97">
+  <scoring group="exercise" passedTestsScore="0" codeReviewScore="50"/>
+  <defaultIncludeCodeFile>hello.js</defaultIncludeCodeFile>
+  <markdown>
+    Особенность практики верстки в том, что тестирование ее возможно только скриншотами, но настраивать скриншотное
+    тестирование долго и больно, поэтому тестировать будем визуально.
+
+    1. [Скачай проект](src/hometask6.1.zip)
+    2. Допиши разметку в `index.html`
+    3. Проверяй себя, открывая `index.html` в браузере и сверяя с итоговой картинкой. Картинка того, как должно
+    получиться, лежит в архиве с заданием, называется `result.png`
+    4. Когда закончишь, проверь на [сайте комитета по стандартизации](https://validator.w3.org/#validate_by_input),
+    что твоя разметка не нарушает требования спецификации. Если есть ошибки, исправь их.
+    5. Когда разметка будет валидной, вставь содержимое `index.html` в окно задания и отправляй на проверку
+  </markdown>
+  <exercise.file language="html">
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <initialCode> // Вставь сюда содержимое файла index.html </initialCode>
+    <expected>hello</expected>
+    <solution>solution</solution>
+  </exercise.file>
+</slide.exercise>

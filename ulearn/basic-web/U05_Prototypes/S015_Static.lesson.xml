@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Статические свойства" id="2699bfea-2c89-4f00-babf-6ac33c605fb2">
+  <markdown>
+    Статические свойства хранят данные и функции, которые относятся к типу в целом, а не к конкретному объекту.
+    Например, у нескольких членов семьи может быть общий бюджет.
+    Бюджет — это статическое значение, существующие в единственном экземпляре, к которому потенциально есть доступ у всех объектов.
+
+    Обычно к статическим членам типа обращаются через имя этого типа.
+    Так как в JS функция — это объект, то статические члены типа просто хранят в функции-конструкторе.
+    Это удобно, т.к. к ним можно обращаться по имени типа (имени функции), а сама функция существует в единственном экземпляре.
+
+    <code language="javascript">
+      function FamilyMember(lastName, firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+      }
+
+      FamilyMember.prototype.getMoney = function(amount) {
+        // К статическим членам приходится обращаться
+        // через имя функции-конструктора
+        // даже внутри динамических методов типа.
+        if (amount > FamilyMember.budget) {
+          amount = FamilyMember.budget;
+        }
+        FamilyMember.budget -= amount;
+        return amount;
+      };
+
+      FamilyMember.budget = 0;
+
+      FamilyMember.addMoney = function(amount) {
+        // В статическом методе можно обращаться
+        // к статическим свойствам через this,
+        // потому что статические методы вызываются через функцию-конструктор.
+        this.budget += amount;
+      };
+
+      const m1 = new FamilyMember('Smith', 'John');
+      const m2 = new FamilyMember('Smith', 'Jane');
+      FamilyMember.addMoney(1000);
+      m2.getMoney(2000);
+    </code>
+
+    Вывод. Функция-конструктор — это объект-мешок, в котором хранятся статические члены типа.
+  </markdown>
+</slide>

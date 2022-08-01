@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<slide.exercise id="a01237c4-ce95-464d-93d2-41d3d0840497" title="Практика. Проверка на 0"
+                xmlns="https://ulearn.me/schema/v2">
+    <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+    <markdown>
+      Напиши функции, которые возвращают значение `a`, если `a` не равен нулю и строку 'Все плохо', если `a` равен 0.
+      Сделай это при помощи:
+
+      1. конструкции if-else
+      2. тернарного оператора
+      3. логического "или" (`||`)
+    </markdown>
+    <exercise.universal exerciseDirName="src/05_checkZero" noStudentZip="true">
+        <checkForPlagiarism>false</checkForPlagiarism>
+        <hideSolutions>true</hideSolutions>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <userCodeFile>task.js</userCodeFile>
+        <includePathForChecker>../TestsRunner</includePathForChecker>
+        <dockerImageName>js-sandbox</dockerImageName>
+        <run>node docker-test-runner.mjs</run>
+        <region>Task</region>
+    </exercise.universal>
+</slide.exercise>

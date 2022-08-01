@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<slide id="32ec8bcd-30c1-407b-b50c-9ce44cd2cc49" title="Строки" xmlns="https://ulearn.me/schema/v2">
+  <markdown>Все текстовые значения в JavaScript представлены строками в формате UTF-16. Подробнее об этом типе прочитай
+    [в этой главе](http://learn.javascript.ru/string)
+  </markdown>
+</slide>

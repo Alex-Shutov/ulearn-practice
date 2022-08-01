@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<slide.exercise id="41078577-9279-4248-85f6-36af187f429b" title="Практика. Сумма элементов массива"
+                xmlns="https://ulearn.me/schema/v2">
+    <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+    <markdown>
+      Напиши функцию, которая принимает на вход массив и возвращает сумму элементов массива.
+      Входной массив может содержать в себе числа и вложенные массивы, если элемент — массив, то к общей сумме должна
+      прибавиться сумма элементов подмассива.
+
+      Например:
+
+      [1, 2, 3] → 6
+
+      [1, [2], [[[3]]]] → 6
+
+      [1, [2, [3, [4]]]] → 10
+    </markdown>
+    <exercise.universal exerciseDirName="src/07_sumArr" noStudentZip="true">
+        <checkForPlagiarism>false</checkForPlagiarism>
+        <hideSolutions>true</hideSolutions>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <userCodeFile>task.js</userCodeFile>
+        <includePathForChecker>../TestsRunner</includePathForChecker>
+        <dockerImageName>js-sandbox</dockerImageName>
+        <run>node docker-test-runner.mjs</run>
+        <region>Task</region>
+    </exercise.universal>
+</slide.exercise>

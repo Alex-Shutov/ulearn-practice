@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Теория" id="94a5800b-0be8-4744-ac75-1bd91bb5a481">
+  <markdown>
+    Настало время, чтобы объединить знания верстки и JavaScript. По-настоящему хорошие интерфейсы получаются, когда
+    эти две технологии действуют вместе.
+
+    1. [Документ и объекты страницы](http://learn.javascript.ru/document). Статьи 1-8
+    2. [Основы работы с событиями](http://learn.javascript.ru/events). Статьи 1-4
+    3. [Формы, элементы управления](http://learn.javascript.ru/forms-controls)
+    4. *Подробнее, про [интерфейсные события](http://learn.javascript.ru/event-details)
+    5. *[Анимации](http://learn.javascript.ru/animation)
+    6. *[Координаты и размеры в документе](http://learn.javascript.ru/document) — статьи 9-11
+  </markdown>
+</slide>

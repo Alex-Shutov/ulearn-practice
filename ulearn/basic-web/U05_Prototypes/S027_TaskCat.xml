@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<slide.exercise id="c5f8c6cb-d9d7-41fb-8861-7f881b3187c8" title="Практика. Кошачьи" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Допиши код так, чтобы `Leopard` унаследовал от `Cat` все методы.
+
+Сделай так, чтобы у `Leopard` метод `sayMeow` возвращал `'Roar!'`
+А метод `getPet` у `Leopard` должен возвращать ту строку, возвращает метод у `Cat`,
+и кроме этого устанавливать леопарду, у которого был вызван метод, в поле `mood` значение `'счастлив'`.
+
+_Обрати внимание: использование ключевого слова `class` запрещено. Наследование нужно реализовывать через прототипы._
+  </markdown>
+  <exercise.universal exerciseDirName="src/27_cat" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

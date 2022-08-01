@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<slide.exercise id="dfc3ae78-7317-4d6f-a047-0299b41f6094" title="Практика. Множитель" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Функция `createMultiplier` должна возвращать функцию, которая
+    при первом вызове возвращает произведение аргумента
+    функции `createMultiplier` и переменной `a`, при втором — аргумента и `b`,
+    при третьем — аргумента и `c`, с четвертого вызова снова `a`, потом `b` и так далее.
+
+    Например:
+    ```
+    const func = createMultiplier(2);
+
+    func(); // 16 (2*a)
+    func(); // 20 (2*b)
+    func(); // 512 (2*c)
+    func(); // 16 (2*a)
+    ```
+  </markdown>
+  <exercise.universal exerciseDirName="src/03_multiplier" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

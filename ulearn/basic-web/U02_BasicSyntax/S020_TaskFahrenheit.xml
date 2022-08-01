@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<slide.exercise id="717f67cc-f53f-45e3-92f1-8fa20572c6d5" title="Практика. Фаренгейт" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Допиши функцию convertCelsiusToFahrenheit, которая принимает на вход число — количество градусов в шкале Цельсия и возвращает число —
+    количество градусов в шкале Фаренгейта.
+
+    Для перевода градусов Цельсия в градусы Фаренгейта, воспользуйся формулой
+
+    ```
+    f = (c × 9/5) + 32,
+    ```
+    
+    где `f` — градусы Фаренгейта, `c` — градусы Цельсия
+  </markdown>
+  <exercise.universal exerciseDirName="src/01_fahrenheit" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

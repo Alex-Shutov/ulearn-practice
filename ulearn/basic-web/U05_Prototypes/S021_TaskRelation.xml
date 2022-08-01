@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="b0e23803-e209-4f93-9637-fe8bd59ddf3e" title="Практика. Взаимоотношения"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Создай в функции `createRelation` объект `frontendDeveloper`.
+
+Он должен унаследовать все методы и поля от объекта `programmer`.
+Метод `reactOnBugReport` у `frontendDeveloper` должен возвращать строку `'Купите новый компьютер'`.
+Функция `createRelation` должна возвращать объект с полями `programmer` и `frontendDeveloper`,
+в которых должны лежать соответствующие объекты.
+
+_Обрати внимание: использование ключевого слова `class` запрещено. Наследование нужно реализовывать через прототипы._
+  </markdown>
+  <exercise.universal exerciseDirName="src/21_relation" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

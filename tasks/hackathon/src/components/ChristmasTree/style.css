@@ -1,0 +1,52 @@
+.tree {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.base {
+    width: 26px;
+    height: 20px;
+    background: #84714F;
+    position: absolute;
+    left: calc(50% - 13px);
+    bottom: 0;
+}
+
+
+.layer {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #499F68;
+}
+
+.layer.two{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid #499F68;
+}
+
+.layer.three{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 160px solid #499F68;
+}
+
+.layer.four{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #499F68;
+}

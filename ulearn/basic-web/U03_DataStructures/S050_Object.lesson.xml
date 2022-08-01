@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<slide id="c05c6203-cef2-4e7f-bdec-ccec815afe8a" title="Объекты" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Простейший способ хранить несколько значений разных типов в JavaScript — использовать объект. Это один из основных
+    строительных кирпичиков языка, прочитай о нём в [этой главе](http://learn.javascript.ru/object)
+  </markdown>
+</slide>

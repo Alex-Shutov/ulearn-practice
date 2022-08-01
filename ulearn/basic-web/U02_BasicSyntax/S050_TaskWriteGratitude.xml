@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<slide.exercise id="85f18ebf-ecbc-4c25-86ae-876e99588726" title="Практика. Пишем благодарность"
+                xmlns="https://ulearn.me/schema/v2">
+    <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+    <markdown>
+        Напиши функцию, которая принимает имя пользователя и оценку — число от 1 до 5, и возвращает строку:
+        "{Имя пользователя} оценил нас на {оценка} из 5. Спасибо, {Имя пользователя}!"
+
+        Если имя не задано, то писать 'Аноним'. Если не задана оценка, то писать '0'
+    </markdown>
+    <exercise.universal exerciseDirName="src/04_createGratitude" noStudentZip="true">
+        <checkForPlagiarism>false</checkForPlagiarism>
+        <hideSolutions>true</hideSolutions>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <userCodeFile>task.js</userCodeFile>
+        <includePathForChecker>../TestsRunner</includePathForChecker>
+        <dockerImageName>js-sandbox</dockerImageName>
+        <run>node docker-test-runner.mjs</run>
+        <region>Task</region>
+    </exercise.universal>
+</slide.exercise>

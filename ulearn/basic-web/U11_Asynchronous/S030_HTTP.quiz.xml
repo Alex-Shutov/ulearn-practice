@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.quiz xmlns="https://ulearn.me/schema/v2" title="Практика. HTTP" id="bacff11b7f7d4d9fad4859da5ebe7301">
+  <scoring tries="4" manualCheck="false"/>
+  <markdown>
+    Все задания будут о получении различных данных с сервера по адресу
+    [https://still-beach-95024.herokuapp.com/](https://still-beach-95024.herokuapp.com/)
+  </markdown>
+  <question.text id="1" maxScore="10" explanation="Сервер при попытке зайти на корневой url сервер отдает JSON такого вида: {text: 'Hello World!', name: 'Я твой новый сервер!', id: '27a43ca1-a50a-4e17-82ea-e2909f960b12'}. Правильный ответ: 27a43ca1-a50a-4e17-82ea-e2909f960b12">
+    <text>Посмотри на данные, которые отправляются, если зайти на корневой url сервера.
+      Скопируй и вставь в поле ниже данные из поля id</text>
+    <regex>27a43ca1-a50a-4e17-82ea-e2909f960b12</regex>
+  </question.text>
+  <question.text id="2" maxScore="10" explanation="Сервер отдает код 204">
+    <text>Зайди на сервер по адресу /code. Напиши в поле ниже статус-код ответа.
+      В ответе должно быть только число</text>
+    <regex>204</regex>
+  </question.text>
+  <question.text id="3" maxScore="10" explanation="code, electricity, cats">
+    <text>Зайди на сервер по адресу /header. Напиши в поле ниже то, что в ответе сервера находится
+      в заголовке "What-Server-Like".</text>
+    <regex>code, electricity, cats</regex>
+  </question.text>
+  <question.text id="4" maxScore="10" explanation="ferrari">
+    <text>Зайди на сервер по адресу /cookie. Напиши в поле ниже то, какое значение в cookie "car" установил
+      сервер.</text>
+    <regex>ferrari</regex>
+  </question.text>
+  <question.text id="5" maxScore="10" explanation="В поисках наибольшего теряют и то, что имеют.\nДемокрит" multiline="true">
+    <text>Зайди на сервер по адресу /file. Напиши в поле ниже содержимое файла, который скачивается по этому
+      адресу</text>
+    <regex ignoreCase="true">В поисках наибольшего теряют и то, что имеют\.\nДемокрит</regex>
+  </question.text>
+  <question.text id="6" maxScore="10" explanation="I'm a teapot">
+    <text>Зайди на сервер по адресу /451?scale=fahrenheit. Напиши в поле ниже текст статуса ответа. То есть, если
+    ответ сервера 404 Not Found, то ответом будет строка Not Found</text>
+    <regex ignoreCase="true">I'm a teapot</regex>
+  </question.text>
+  <question.text id="7" maxScore="10" explanation="302. Это статус редиректа, он перенаправляет запрос на другой адрес">
+    <text>Зайди на сервер по адресу /findMe. Напиши код ответа от сервера. Ответом будет число.</text>
+    <regex>302</regex>
+  </question.text>
+</slide.quiz>

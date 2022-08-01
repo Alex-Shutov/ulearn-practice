@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Прототипы" id="4c9c87a9-eaef-4011-9c2b-6b4ed0462f28">
+  <markdown>
+    Создать объект в JS легко:
+
+    <code language="javascript">
+      const point = {
+        x: 1,
+        y: 2
+      };
+    </code>
+
+    Чтобы создавать одинаковые объекты можно определить функцию:
+
+    <code language="javascript">
+      function createPoint(x, y) {
+        return {
+          x: x,
+          y: y,
+          getLength: function() {
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+          }
+        };
+      }
+
+      // Создаем одинаковым образом два объекта
+      const p1 = createPoint(1, 2);
+      const p2 = createPoint(2, 3);
+      // У каждого объекта своя функция getLength
+      const l1 = p1.getLength();
+      const l2 = p2.getLength();
+    </code>
+
+    В этом случае при каждом создании точки будет создаваться функция для свойства `getLength`.
+    Это расточительно. Было бы правильнее создать функцию один раз и иметь возможность использовать ее из разных объектов.
+
+    Это можно сделать с помощью механизма прототипов.
+    У любого объекта в JS может быть объект-прототип. Прототип — это обычный объект.
+    Когда у объекта получают значение некоторого свойства и это свойство неопределено,
+    JS автоматически пытается получить значение этого свойства у прототипа.
+    Прототип — это обычный объект, поэтому если свойство не будет найдено в прототипе,
+    то JS начнет его искать в прототипе прототипа.
+
+    <code language="javascript">
+      // Прототип содержит необходимые функции.
+      const pointProto = {
+        getLength: function() {
+          return Math.sqrt(this.x * this.x + this.y * this.y);
+        }
+      };
+
+      function createPoint(x, y) {
+        // Создаем пустой объект, у которого задан прототип.
+        const result = Object.create(pointProto);
+        result.x = x;
+        result.y = y;
+        return result;
+      }
+
+      const p1 = createPoint(1, 2);
+      const p2 = createPoint(2, 3);
+      // Одна и та же функция из прототипа вызывается для разных объектов.
+      const l1 = p1.getLength();
+      const l2 = p2.getLength();
+    </code>
+
+    Что использовать для взаимодействия с прототипом:
+
+    - `Object.create(proto)` — создает объект с заданным прототипом `proto`
+    - `Object.setPrototypeOf(obj, proto)` — задает `proto` в качестве прототипа для `obj`
+    - `Object.getPrototypeOf(obj)` — возвращает объект-прототип объекта `obj`
+    - `obj.__proto__` — свойство, позволяющее зачитать или задать прототип. Недоступно в ряде сред выполнения JS, поэтому предпочтительно использовать предыдущие методы.
+
+    Вывод. Прототип — это объект-мешок, в котором обычно хранят все методы типа.
+  </markdown>
+</slide>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<slide id="9ddd54a6-f9db-415c-95a9-bbd169003b20" title="Дата и время" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Для работы с датами и временем в JavaScript есть специальный объект `Date`. Прочитай о нём в [этой
+    главе](http://learn.javascript.ru/date)
+  </markdown>
+</slide>

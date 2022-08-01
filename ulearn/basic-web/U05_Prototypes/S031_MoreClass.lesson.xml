@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Подробнее про классы" id="32507dc9-52cc-4fd4-8730-32c94175311f">
+  <markdown>
+    А теперь прочти эти статьи, чтобы глубже понять классы:
+
+    1. Статья на [learn.javascript.ru](http://learn.javascript.ru/classes)
+    2. Статья на [MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
+  </markdown>
+</slide>

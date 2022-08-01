@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="155d9cac-107c-411e-b203-48db17600582" title="Практика. Обрезка строк"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, обрезающую строку (первый аргумент), если она длиннее, чем максимальная длина (второй
+    аргумент функции). Функция должна возвращать обрезанную строку, добавляя символ
+    [многоточие](https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%82%D0%BE%D1%87%D0%B8%D0%B5) в конце
+    строки (`'…'`). Если длина строки меньше или равна максимальной длине, то функция должна возвращать исходную строку.  
+    Например:
+    <code>
+      truncateString('abcde', 3) // 'abc…'
+      truncateString('abcdefg', 30) // 'abcdefg'
+    </code>
+  </markdown>
+  <exercise.universal exerciseDirName="src/03_truncateString" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

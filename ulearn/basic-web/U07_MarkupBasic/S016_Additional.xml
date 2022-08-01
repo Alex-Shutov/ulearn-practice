@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<slide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b1d87508-918e-4074-be16-113b1986098b" title="Дополнительно" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    #### Три главы на практику разметки:
+
+    — [Страничка](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/verstaem-sait-sportivnih-novostei.html),
+    на примере которой будет описана практика
+    — [Верстка каркаса](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/verstka-karkasa.html)
+    — [Верстка контента](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/verstka-shapki.html)
+
+    **Примечание:** существует два подхода к верстке страниц:
+
+    1. Верстаем сверху вниз. То есть сначала берем шапку, делаем все, чтобы она идеально выглядела (остальной
+    страницы нет), потом меню, потом контент, потом футер.
+    2. Сначала готовим семантически правильную разметку для всей страницы, потом добавляем стилей, чтобы все стало
+    красиво.
+
+    Для целей обучения лучше подходит второй пункт: так автоматически получается обучаться компонентному подходу и не
+    создаются блоки, которые подходят только для верстки, но не для логики страницы.
+    Поэтому вся верстка, которую придется делать в рамках этого курса предполагает именно такой подход: сначала
+    HTML-разметка для всей страницы, потом стили.
+
+    -----------
+
+    #### Дополнительные главы
+
+    Прочитать эти главы нужно будет обязательно для выполнения следующих глав, но в них можно удовлетворить свое
+    любопытство о том, что такое px, как использовать шрифты в верстке, как можно задавать цвета.
+
+    1. [Цвета](https://webref.ru/course/css-basics/color)
+    2. [Размеры](https://webref.ru/course/css-basics/size)
+    3. [Типографика](https://webref.ru/layout/learn-html-css/working-with-typography)
+  </markdown>
+</slide>

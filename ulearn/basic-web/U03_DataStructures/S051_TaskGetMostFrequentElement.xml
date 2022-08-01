@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<slide.exercise id="8a85fdee-5ff3-4fd8-842b-1de825e73aea" title="Практика. Самый частый элемент"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, которая возвращает встречающийся чаще всего элемент массива.  
+    Например:
+    <code>
+      getMostFrequentElement(['a', 'b', 'a', 'a']) // 'a'
+    </code>
+  </markdown>
+  <exercise.universal exerciseDirName="src/06_getMostFrequentElement" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

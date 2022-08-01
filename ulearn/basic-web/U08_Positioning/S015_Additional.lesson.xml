@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<slide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="0bdfcf42-5f0e-4fcc-af50-0e327332a22a" title="Дополнительно" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Эти темы тебе пригодится, чтобы чувствовать себя уверенно в мире верстки, знать все варианты того, как можно
+    сверстать какой-то интерфейс и понимать, какой вариант лучше выбрать. Все эти темы обязательно понадобятся тебе,
+    если ты планируешь всерьез заниматься фронтендом или соберешься делать себе классный сайт, но они не
+    обязательны к изучению прямо сейчас.
+
+    1. Float
+      - [Позиционирование при помощи
+      float](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/pozitsionirovanie-blochnih-elementov-v-stroku-s-pomoschyu-float.html).
+      Раньше, когда не было flexbox и grid, основную разметку страницы делали при помощи свойства float. Сейчас знать
+      это свойство нужно, чтобы а) править старую верстку; б) позиционировать картинки в тексте, чтобы он их красиво
+      обтекал.
+      - Интерактивная статья по float [How browsers position floats](https://meowni.ca/posts/float-layout/) на
+      английском. Поможет понять, как это все работает.
+    2. [Подробная статья](https://webref.ru/layout/learn-html-css/positioning-content) про три вида
+    позиционирования: inline-block, float и position. Меньше размышлений, больше технических моментов.
+    3. Grid Layout
+      - [Grid Layout](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) —
+      для начала достаточно прочитать раздел "Что такое Grid?", потом пройти обучение из следующего пункта, а потом
+      вернуться и просмотреть остальную статью.
+      - [Интерактивное обучение](http://cssgridgarden.com/#ru) по grid layout: нужно поливать морковку используя grid.
+      - [Справочное руководство](https://css-tricks.com/snippets/css/complete-guide-grid/) по свойствам. Такое же
+      полезное, как и руководство по flexbox. Когда захочешь сделать сетку сайта, открывай руководство и вспоминай
+      правильные названия.
+    4. [Фоны и градиенты](https://webref.ru/layout/learn-html-css/setting-backgrounds-and-gradients). Если научиться
+    пользоваться градиентами, то можно делать очень необычные и красивые вещи с их помощью, например, вот
+    [набор паттернов](http://lea.verou.me/css3patterns/), сверстанный градиентами — каждый паттерн на сайте сделан
+    градиентами, можешь посмотреть их в инструментах разработчика.
+  </markdown>
+</slide>

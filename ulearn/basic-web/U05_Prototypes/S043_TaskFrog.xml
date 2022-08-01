@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<slide.exercise id="6f648c7a-9945-47f7-b2c2-bafe6004c1fa" title="Практика. Лягушка" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+В природе существуют жабы, которые могут менять свой пол в течение жизни,
+чтобы сохранять соотношение самцов и самок в популяции.
+
+Допиши классу `Frog` возможность при создании экземпляра класса указать пол: поле `sex`, которое принимает значение `'male'` или `'female'`.
+
+У всех лягушек должны быть общие, статические поля, подсчитывающие общее количество
+самцов и самок в популяции. К полям должно быть можно обратиться так: `Frog.maleCount` и `Frog.femaleCount`.
+
+Еще у лягушек должен быть общий, статический метод `getSexRatio`, который считает
+отношение количества самцов к количеству самок. Обратиться к нему должно быть можно так: `Frog.getSexRatio()`.
+
+У каждой лягушки должен быть метод `updateSex`, который проверяет
+соотношение самцов и самок в популяции статическим методом из прошлого пункта.
+
+- Если соотношение ≤ 0.5, то лягушка должна стать самцом (если она не самец).
+- Если соотношения ≥ 1.5, то лягушка должна стать самкой (если она еще не самка).
+
+Не забудь обновить количество в полях `Frog.maleCount` и `Frog.femaleCount`.
+  </markdown>
+  <exercise.universal exerciseDirName="src/43_frog" noStudentZip="true">
+    <checkForPlagiarism>true</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

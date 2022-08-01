@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Hello Markup World" id="50028794-5604-4cd0-861f-6883c8689bac">
+    <markdown>
+        Давай научимся создавать первые HTML-странички:
+
+        #### 1. HTML-файл
+
+        Создай файл `index.html`. Напиши в нем следующую разметку:
+
+        <code>
+            &lt;h1&gt;Hello Markup World&lt;/h1&gt;
+            &lt;p&gt;Hi, I'm your first site! &lt;a href="http://example.com/"&gt;link&lt;/a&gt;&lt;/p&gt;
+        </code>
+
+        Сохрани файл и открой его в браузере либо через контекстное меню файла, либо перетаскиванием (это называется
+        Dran'n'Drop) файла в браузер. Выглядеть будет примерно так:
+
+        ![first page](img/firstSite.png)
+
+
+        #### 2. Онлайн-песочницы
+
+        Как для JavaScript, так и для верстки, существуют онлайн-редакторы. Тот же [codepen](https://codepen.io/pen/)
+        прекрасно подходит для случаев, когда нужно быстро накидать какой-то концепт,
+        проверить гипотезу и/или нужно поделиться решением с коллегой.
+
+        Вот так выглядит интерфейс: верхние три блока для HTML, CSS и JS. Снизу результат того, что написано в верхних
+        блоках.
+
+        ![codepen interface](img/codepen.png)
+    </markdown>
+</slide>

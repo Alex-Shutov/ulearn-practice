@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<slide.exercise id="d9b46922-3632-4dd1-abc3-62a22b4070d1" title="Практика. Стеснительная собачка" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Допиши класс `ShyDog`. Этот класс описывает собачку,
+которая думает, что она толстая и стесняется своего веса,
+поэтому врет, когда ее просят сказать, сколько она весит.
+
+У собачки должно быть поле `weight`.
+При попытке что-то в это поле записать, собачка записывает значение в два раза меньше переданного.
+При попытке это поле получить, собачка должна возвращать значение на 1 меньше того, которое у нее записано, но не меньше 1.
+
+Использоваться это будет так:
+```
+const fatDoggo = new ShyDog();
+fatDoggo.weight = 30;  // собачка записывает 15
+console.log(fatDoggo.weight); // возвращается 14
+```
+  </markdown>
+  <exercise.universal exerciseDirName="src/44_shydog" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Теория" id="1d98b29c-5122-4ab2-a4c2-968f8ad269e8">
+  <markdown>
+    __Таблицы__ — популярный и удобный способ показывать информацию.
+    [Разберись в таблицах](https://webref.ru/layout/learn-html-css/organizing-data-with-tables)
+
+    Часто мы хотим не только показывать пользователям информацию, но и получать ее. Для почти всех взаимодействий
+    пользователя со страницей есть элементы __форм__: кнопки, переключатели, поля ввода разных типов.
+    [Все про формы](https://webref.ru/layout/learn-html-css/building-forms)
+
+
+    -----------
+
+    #### Дополнительные главы про верстку
+
+    Эти разделы для тех, кто хочет всерьез научиться верстке:
+
+    - [Вставка медиа](https://webref.ru/layout/learn-html-css/adding-media) — как добавлять картинки, аудио, видео и,
+    например, карты Гугла.
+    - [Как писать хорошую верстку](https://webref.ru/layout/learn-html-css/writing-your-best-code)
+    - Анимации
+      - [Простые переходы](https://webref.ru/course/css-advanced/transitions)
+      - [Многошаговые и сложные анимации](https://webref.ru/course/css-advanced/animation)
+      - [Трансформации](https://webref.ru/course/css-advanced/transform)
+  </markdown>
+</slide>

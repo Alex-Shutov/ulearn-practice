@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Всякое полезное" id="eb9aa461-6cea-4c9d-9f49-9121468f7490">
+  <markdown>
+    1. Иногда нужно выполнить какие-то действия с некоторой задержкой. Для этого существует API таймеров:
+    [setTimeout и setInterval](http://learn.javascript.ru/settimeout-setinterval)
+    2. [Перехват ошибок](http://learn.javascript.ru/try-catch)
+    3. [Модули](http://learn.javascript.ru/modules) — тема «Динамические импорты» необязательна.
+
+    Обрати внимание, что при работе с Node.js нужно использовать **CommonJS**-синтаксис модулей.
+
+    Единичный экспорт/импорт:
+
+    ```
+    // lib.js
+    module.exports = function () {};
+
+    // main.js
+    const lib = require('./lib');
+    ```
+
+    Множественный экспорт/импорт:
+
+    ```
+    // lib.js
+    exports.foo = function () {};
+    exports.bar = function () {};
+
+    // main1.js
+    const lib = require('./lib');
+    lib.foo();
+    lib.bar();
+
+    // main2.js
+    const foo = require('./lib').foo;
+    const bar = require('./lib').bar;
+    foo();
+    bar();
+    ```
+    Единичные и множественные экспорты взаимоисключающи: нужно выбрать какой-то один стиль. Либо сделать так:
+
+    ```
+    function defaultExport() {}
+    defaultExport.foo = function () {};
+    defaultExport.bar = function () {};
+
+    module.exports = defaultExport;
+    ```
+  </markdown>
+</slide>

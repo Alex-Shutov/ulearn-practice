@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<slide.exercise id="eee4d832-d5fc-4563-aeab-b219f5e98d26" title="Практика. Деление" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, принимающую два числа `a` и `b` и возвращающую наименьшее по модулю целое число `r`, где `a = r × b + k, |k| &lt; |b|`
+  </markdown>
+  <exercise.universal exerciseDirName="src/01_divide" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

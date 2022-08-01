@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Ресурсы" id="f9bcba27-43ca-4e73-8372-631d89521236">
+  <markdown>
+    Справочные ресурсы:
+
+    1. [Справочник](https://webref.ru/ref) по тегам и стилям.
+    2. [Старая версия справочника](http://htmlbook.ru/), иногда на ней статьи лучше описаны
+    3. [MDN](https://developer.mozilla.org/) актуален также, как и для JS
+    4. [CanIUse](https://caniuse.com/) — сайт, на котором можно проверить, поддерживается ли браузерами классное
+    свойство, которое вы нашли в интернете. Также по нему удобно смотреть распространенность браузеров в России и
+    мире. Попробуй, например, свойство [border-radius](https://caniuse.com/#feat=border-radius)
+
+
+
+    Туториалы и другие курсы:
+
+    1. Интерактивные курсы на [HTML Academy](https://htmlacademy.ru/courses)
+    2. [Туториал](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/html.html), в
+    котором нет ничего лишнего, только основы, которые точно пригодятся.
+    3. [Туториал на Khan Academy](https://www.khanacademy.org/computing/computer-programming/html-css), на английском.
+
+  </markdown>
+</slide>

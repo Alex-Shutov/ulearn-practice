@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide.exercise id="5c22a711-d2a9-4f57-b1ee-a7e64117b525" title="Практика. Лунный день" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Не меняя уже написанный код (можно только дописывать новый),
+    сделай так, чтобы в `calculateHoursOnMoon`
+    переменная `HOURS_IN_DAY` была равна `29,5`, а в функции `calculateHoursOnEarth`
+    эта переменная была `24`.
+  </markdown>
+  <exercise.universal exerciseDirName="src/01_hours" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

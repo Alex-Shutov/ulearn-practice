@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Подробнее про прототипы" id="46fd33f7-e1c9-4478-9c3e-d4af951d9324">
+  <markdown>
+    А теперь прочти эти статьи, чтобы глубже понять прототипное наследование:
+    
+    1. Раздел [«ООП в прототипном стиле»](http://learn.javascript.ru/prototypes)
+    2. Статья на MDN [«Наследование и цепочка прототипов»](https://developer.mozilla.org/ru/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+    * Для желающих разобраться еще лучше рекомендуем несколько глав из книги «You Don't Know JS: this &amp; Object
+    Prototypes»:
+      - Глава про идейное различие прототипного наследования и классических классов [Mixing (Up) "Class"
+    Objects](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/this-object-prototypes/ch4.md). Эта же
+    глава на русском: [Смешивая объекты "классов"](https://github.com/azat-io/you-dont-know-js-ru/blob/master/this%20%26%20object%20prototypes/ch4.md)
+    Русский перевод на середине статьи заканчивается и превращается в английский оригинал. Если ты чувствуешь себя
+    уверенно, можешь перевести (а заодно глубоко разобраться в теме) и отправить переводчику pull-request: так ты
+    поучаствуешь в open-source и прокачаешься в английском, а мир получит хорошую статью.
+      - [Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/this-object-prototypes/ch5.md).
+    На русском:
+    [Прототипы](https://github.com/azat-io/you-dont-know-js-ru/blob/master/this%20%26%20object%20prototypes/ch5.md)
+      - [Behavior Delegation](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/this-object-prototypes/ch6.md)
+    На русском: [Делегирование поведения](https://github.com/azat-io/you-dont-know-js-ru/blob/master/this%20%26%20object%20prototypes/ch6.md)
+  </markdown>
+</slide>

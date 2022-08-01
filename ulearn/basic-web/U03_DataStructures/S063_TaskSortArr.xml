@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="122d3855-cac7-48cf-8e67-07ee2a754a90" title="Практика. Сортировка"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Допиши функцию, сортирующую, приходящий на вход массив в порядке убывания элементов. Обрати внимание, исходный
+    массив не должен поменяться.
+
+    Например:
+    <code>
+      sortArr([1,2,3]) -> [3,2,1]
+      sortArr([0, -14, 23, 10, 1]) -> [23, 10, 1, 0, -14]
+    </code>
+  </markdown>
+  <exercise.universal exerciseDirName="src/10_sortArr" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

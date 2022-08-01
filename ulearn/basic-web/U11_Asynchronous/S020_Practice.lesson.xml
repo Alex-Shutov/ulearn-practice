@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Практика. Promises" id="467aed27-374a-49c8-8a65-97fbd3315177">
+  <scoring group="exercise" passedTestsScore="0" codeReviewScore="50"/>
+  <defaultIncludeCodeFile>hello.js</defaultIncludeCodeFile>
+  <markdown>
+    1. [Скачай проект](src/hometask10.zip)
+    2. Установи зависимости командой `npm install` в директории скачанного проекта
+    3. Допиши функции в tasks.js
+    4. Проверяй себя при помощи тестов: выполняй команду `npm run test` в терминале, в директории скачанного проекта
+    5. Когда закончишь, вставь содержимое tasks.js в окно задания и отправляй на проверку
+  </markdown>
+  <exercise.file>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <initialCode> // Вставь сюда содержимое файла tasks.js </initialCode>
+    <expected>hello</expected>
+    <solution>solution</solution>
+  </exercise.file>
+</slide.exercise>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide.exercise id="3a6d11d1-52ee-40f2-aa2d-da5330089f2e" title="Практика. Армагеддон" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Допиши функцию `crashMeteorite`, после которой
+    продолжительность дня на земле (из предыдущей задачи) станет 22 часа.
+
+    Считай, что код этой задачи размещается сразу после кода с решением предыдущей задачи.
+  </markdown>
+  <exercise.universal exerciseDirName="src/02_meteor" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Теория" id="8ae71eed-4f9d-4000-89b1-ef3f58e6f014">
+  <markdown>
+    В качестве примера работы с бэкендом будем рассматривать среду Node.js и фреймворк [Express](https://expressjs.com/)
+
+    1. Прочитай раздел [Getting started](https://expressjs.com/en/starter/installing.html), особенно нам будут интересны
+    пункты [Basic routing](https://expressjs.com/en/starter/basic-routing.html) и [Static files](https://expressjs.com/en/starter/static-files.html)
+    2. Одна из основных задач, с которыми мы столкнёмся — это роутинг, прочитай о нём подробнее [здесь](https://expressjs.com/en/guide/routing.html)
+    3. Для удобства работы с html используют различные шаблонизаторы. Прочитай о том как использовать движки шаблонов [здесь](https://expressjs.com/en/guide/using-template-engines.html).
+    Мы будем использовать [Handlebars](https://handlebarsjs.com/) из-за его простоты и сходства с html
+    4. Примеры приложений на Express можно посмотреть в [официальном репозитории](https://github.com/expressjs/express/tree/master/examples)
+  </markdown>
+</slide>

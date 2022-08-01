@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="537495ec-89e3-457e-a15a-0593fe4d4fe1" title="Практика. Пришла весна" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Сделай так, чтобы при вызове функции `runSpring` у всех оленей из предыдущей задачи появился метод `tryToFindPartner`.
+
+Метод `tryToFindPartner` должен возвращать с 50% вероятностью `'fail'`,
+и с 50% вероятностью `'success'`. Если метод возвращает `'success'`, то у оленя,
+у которого вызван метод должно появиться поле `hasBaby` равное `true`.
+
+При этом не меняй объект `deer` напрямую, измени прототип у `NorthReindeer`.
+
+_Обрати внимание: использование ключевого слова `class` запрещено. Наследование нужно реализовывать через прототипы._
+  </markdown>
+  <exercise.universal exerciseDirName="src/24_spring" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

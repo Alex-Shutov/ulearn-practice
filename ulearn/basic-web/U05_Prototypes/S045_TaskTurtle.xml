@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<slide.exercise id="aeb1fe7c-53a9-45ed-b64b-1f6d3327f7e1" title="Практика. Черепаха" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Допиши класс черепах (`Turtle`), который должен стать наследником класса рептилий (`Reptile`)
+
+У черепах должна быть возможность при создании указать, является ли она морской. Вот так:
+```
+new Turtle(true) // морская черепаха
+new Turtle() // сухопутная черепаха
+```
+
+Если у морской черепахи вызвать метод `run`, то вместо этого
+должен вызваться метод `move` (который унаследован от `Reptile`) — черепаха не может бежать в воде.
+У сухопутной черепахи при вызове метода `run` должен вызываться метод, унаследованный от рептилий.
+  </markdown>
+  <exercise.universal exerciseDirName="src/45_turtle" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

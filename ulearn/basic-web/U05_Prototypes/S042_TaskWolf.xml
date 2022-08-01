@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide.exercise id="0618c023-f8fd-4bb5-8aec-e8355a5da3ec" title="Практика. Волк" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+Функция `Wolf` наследует методы от функции `Dog`.
+
+Перепиши обе функции и их родственные отношения на синтаксис `class`.
+  </markdown>
+  <exercise.universal exerciseDirName="src/42_wolf" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

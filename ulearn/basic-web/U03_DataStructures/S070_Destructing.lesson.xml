@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<slide id="12ebebd0-2cfc-420a-88c7-82604f409783" title="Деструктуризация" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Иногда, массив или объект нужно разбить на несколько переменных. Для этого в языке существует специальный синтаксис
+    — деструктурирующее присваивание. Прочитай о нём в [этой
+    главе](http://learn.javascript.ru/destructuring-assignment). Также могут пригодиться [rest
+    параметры](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+  </markdown>
+</slide>

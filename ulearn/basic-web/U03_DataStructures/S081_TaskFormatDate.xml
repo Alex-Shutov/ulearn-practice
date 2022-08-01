@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<slide.exercise id="d03be231-646d-4824-9145-de6706ac84c8" title="Практика. Форматирование даты"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Напиши функцию, форматирующую дату в формат "DD-MM-YYYY"  
+    Например,
+    <code>formatDate(new Date(2015, 3, 2)) // 02-04-2015</code>
+  </markdown>
+  <exercise.universal exerciseDirName="src/07_formatDate" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

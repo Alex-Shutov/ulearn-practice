@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<slide id="1833cf5e-6d82-4b3e-8e62-468e0252912c" title="Числа" xmlns="https://ulearn.me/schema/v2">
+  <markdown>Числа в JavaScript представлены формате с плавающей точкой. До появления
+    [BigInt](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/BigInt) любое числовое
+    значение в языке представлялось с помощью типа `number`. Подробнее об этом типе прочитай [в этой
+    главе](http://learn.javascript.ru/number)
+  </markdown>
+</slide>

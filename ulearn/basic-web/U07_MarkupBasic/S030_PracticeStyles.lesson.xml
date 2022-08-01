@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Практика. Стили" id="abee945b-ebf6-4306-9fc9-e311ac2de10f">
+  <scoring group="exercise" passedTestsScore="0" codeReviewScore="50"/>
+  <defaultIncludeCodeFile>hello.js</defaultIncludeCodeFile>
+  <markdown>
+    1. [Скачай проект](src/hometask6.2.zip)
+    2. Допиши стили в `style.css`
+    3. Проверяй себя, открывая `index.html` в браузере и сверяя с итоговой картинкой. Картинка того, как должно
+    получиться, лежит в архиве с заданием, называется `result.png`
+    4. Когда закончишь, вставь содержимое `style.css` в окно задания и отправляй на проверку
+  </markdown>
+  <exercise.file language="css">
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <initialCode> // Вставь сюда содержимое файла style.css </initialCode>
+    <expected>hello</expected>
+    <solution>solution</solution>
+  </exercise.file>
+</slide.exercise>

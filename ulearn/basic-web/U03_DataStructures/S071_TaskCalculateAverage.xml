@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<slide.exercise id="c22eea3c-44bf-4498-9825-4304bb9f57de" title="Практика. Среднее значение"
+                xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Допиши функцию, которая принимает неограниченное количество аргументов и возвращает среднее арифметическое
+    значение этих аргументов
+  </markdown>
+  <exercise.universal exerciseDirName="src/09_calculateAverage" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

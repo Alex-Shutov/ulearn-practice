@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<slide.exercise id="2d062558-80ec-4926-95d6-e29a16f4827d" title="Практика. Возведение в квадрат" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, возвращающую массив, каждый элемент которого — элемент исходного массива, возведенный в квадрат</markdown>
+  <exercise.universal exerciseDirName="src/04_square" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

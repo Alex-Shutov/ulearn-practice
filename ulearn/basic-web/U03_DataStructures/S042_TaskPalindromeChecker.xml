@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<slide.exercise id="2405fd29-6afb-4f50-93ab-b7f7eaeca00e" title="Практика. Палиндром" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>Напиши функцию, принимающую строку и возвращающую булево значение — результат проверки, что строка в прямом
+    и обратном направлении читается одинаково (является палиндромом). Проверка должна работать регистронезависимо.
+  </markdown>
+  <exercise.universal exerciseDirName="src/05_palindromeChecker" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

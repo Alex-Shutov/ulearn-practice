@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide id="79669e5b-7cc1-4d47-9c2b-8631dc48ddba" title="Примитивы" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Не смотря на то, что JavaScript часто называют нетипизированным, в языке есть 7 (8, если считать почти
+    стандартный [BigInt](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/BigInt))
+    различных типов.
+    Условно все типы можно разделить на **примитивы** и **объекты**.
+
+    Примитивы бывают следующих типов:
+
+    - `string`
+    - `number`
+    - `boolean`
+    - `symbol`
+    - `null`
+    - `undefined`
+    - (`bigint`)
+
+    Объект
+
+    - Хранит набор значений в виде свойств
+    - Может иметь функции в качестве значений свойств
+
+    Для удобства работы с примитивами, каждому из них соответствует свой объект-обёртка, который позволяет вызывать набор
+    стандартных методов и свойств. Подробнее — [по ссылке](http://learn.javascript.ru/primitives-methods#primitiv-kak-obekt)
+  </markdown>
+</slide>

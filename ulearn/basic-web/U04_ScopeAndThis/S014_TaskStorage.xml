@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<slide.exercise id="98b1f100-bc5c-46ba-a884-c8803ea00dca" title="Практика. Хранилище" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Напиши функцию `createStorage`, которая будет уметь хранить какие-то данные и манипулировать ими.
+    Функция должна возвращать объект с методами:
+
+    * add — метод, который принимает на вход любое количество аргументов и добавляет их в хранилище;
+    * get — метод, возвращающий хранилище;
+    * clear — метод, очищающий хранилище;
+    * remove — метод, который принимает на вход элемент, который нужно удалить из хранилища, и удаляет его.
+
+    Примеры использования:
+    ```
+    const dataStorage = createStorage();
+    dataStorage.add(1,2,3);
+    dataStorage.add([5, 6]);
+    dataStorage.get(); // [1, 2, 3, [5, 6]]
+
+    dataStorage.remove(1);
+    dataStorage.get(); // [2, 3, [5, 6]]
+
+    dataStorage.clear();
+    dataStorage.get(); // []
+    ```
+  </markdown>
+  <exercise.universal exerciseDirName="src/04_storage" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide.exercise id="7b4aa9ff-9cea-4f1e-a9d3-b7eb3e2a8d6a" title="Практика. Создание NaN"
+                xmlns="https://ulearn.me/schema/v2">
+    <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+    <markdown>
+        Напиши функцию, возвращающую NaN, который должен получаться из строки 'abc' с помощью бинарного или
+        унарного оператора.
+    </markdown>
+    <exercise.universal exerciseDirName="src/03_getNaN" noStudentZip="true">
+        <checkForPlagiarism>false</checkForPlagiarism>
+        <hideSolutions>true</hideSolutions>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <userCodeFile>task.js</userCodeFile>
+        <includePathForChecker>../TestsRunner</includePathForChecker>
+        <dockerImageName>js-sandbox</dockerImageName>
+        <run>node docker-test-runner.mjs</run>
+        <region>Task</region>
+    </exercise.universal>
+</slide.exercise>

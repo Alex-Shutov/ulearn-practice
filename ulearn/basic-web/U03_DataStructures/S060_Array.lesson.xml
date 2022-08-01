@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<slide id="8484cb98-9d4f-40f2-a931-ff79e28cbdd3" title="Массивы" xmlns="https://ulearn.me/schema/v2">
+  <markdown>
+    Для хранения упорядоченной коллекции данных в JavaScript используются массивы. Прочитай про них в [этой
+    главе](http://learn.javascript.ru/array) и про методы — [в этой](http://learn.javascript.ru/array-methods)
+  </markdown>
+</slide>

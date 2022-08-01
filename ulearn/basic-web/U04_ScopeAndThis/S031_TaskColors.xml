@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<slide.exercise id="6b23eb3f-e533-4b1d-be9e-93c88703cb30" title="Практика. Фабрика цвета" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="exercise" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Напиши функцию-фабрику объектов, которая называется `createColor`.
+    Функция принимает на вход строку с названием цвета и возвращает объект, в котором есть:
+
+    * поле `colorName` с названием цвета
+    * метод `use`, возвращающий строку `'Используется {color} цвет'`. Название цвета должно быть написано маленькими буквами.
+    * метод `stopUse`, возвращающий строку `'{color} цвет больше не используется'`. Название цвета должно начинаться с заглавной буквы, а остальные буквы — маленькие.
+
+    Цвет в методах должен получаться с использованием ключевого слова `this`.
+  </markdown>
+  <exercise.universal exerciseDirName="src/05_colors" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>task.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.mjs</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>

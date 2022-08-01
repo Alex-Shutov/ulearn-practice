@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Подготовка" id="985c5462-c6d1-47c9-9b8f-a270f24b7b42">
+  <markdown>
+    Сначала установи все необходимое.
+
+    1. Установи [node.js](https://nodejs.org/en/) версии 16.
+    2. Установи хотя бы один браузер с удобными инструментами разработчика — Chrome, Firefox, Opera или Yandex Browser.
+    3. Установи IDE:
+      - лучше всего [WebStorm](https://www.jetbrains.com/webstorm/). Он бесплатный для студентов, узнай, как получить
+    ключ;
+      - если с WebStorm не получилось то подойдет [Visual Studio Code](https://code.visualstudio.com/);
+      - на крайний случай подойдут текстовые редакторы вроде Atom, Sublime Text, Notepad++...
+  </markdown>
+</slide>
