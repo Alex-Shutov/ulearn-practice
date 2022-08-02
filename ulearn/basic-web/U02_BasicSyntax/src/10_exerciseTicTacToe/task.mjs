@@ -36,6 +36,10 @@ export function cellClickHandler (row, col) {
     }, 0);
 }
 
+export function resetClickHandler() {
+    startGame()
+}
+
 function makeAiTurn (aiSymbol) {
     const chosenCells = getEmptyCells();
 
@@ -136,4 +140,5 @@ function getWinningCellsAfterSymbol (symbol, row, col) {
     }
     return null;
 }
+
 //#endregion Exercise

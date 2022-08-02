@@ -1,7 +1,6 @@
 import Exercise from "./task.Addition.mjs";
 import {startGame,exercise} from "./task.Initial.mjs";
-import * as path from "path";
-import {expect} from '../../../../../../../../Users/Ni3omi/AppData/Roaming/npm/node_modules/chai/index.mjs'
+import {expect} from 'chai'
 
 describe('Exercise', () => {
   it('startGame is working',()=>{

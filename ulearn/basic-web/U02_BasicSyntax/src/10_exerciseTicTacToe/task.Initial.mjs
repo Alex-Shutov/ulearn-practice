@@ -11,6 +11,10 @@ export function startGame(){
     exercise.Field = []
 }
 
+export function resetClickHandler() {
+
+}
+
 
 
 //#region Exercise

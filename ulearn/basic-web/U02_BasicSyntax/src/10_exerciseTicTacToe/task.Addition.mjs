@@ -1,7 +1,10 @@
-import {startGame, cellClickHandler} from "./complete.mjs";
+import {startGame, cellClickHandler,resetClickHandler} from "./task.mjs";
+import jsdom from "jsdom";
+const dom = new jsdom.JSDOM(`<!DOCTYPE html><body><p id="fieldWrapper"></p></body>`);
 
 export default class Exercise {
     constructor() {
+
         this.CROSS = 'X';
         this.ZERO = 'O';
         this.EMPTY = ' ';
@@ -9,12 +12,15 @@ export default class Exercise {
         this.CurrentSymbol = null;
         this.WinningSymbol = null;
 
-
-        this.container = document.getElementById('fieldWrapper');
-
+        this.Dom = global.window ? document: dom.window.document
+        this.container = this.Dom.getElementById('fieldWrapper')
         this.Field = this.createField();
     }
-
+    creatingDocument(){
+        var doc = dom.window.document
+        document = doc
+        return doc.getElementById('main')
+    }
     startExercise() {
         debugger
         this.renderGrid();
@@ -58,9 +64,9 @@ export default class Exercise {
         this.container.innerHTML = '';
 
         for (let i = 0; i < dimension; i++) {
-            const row = document.createElement('tr');
+            const row = this.Dom.createElement('tr');
             for (let j = 0; j < dimension; j++) {
-                const cell = document.createElement('td');
+                const cell = this.Dom.createElement('td');
                 cell.textContent = this.EMPTY;
                 cell.addEventListener('click', () => cellClickHandler(i, j));
                 row.appendChild(cell);
@@ -86,12 +92,8 @@ export default class Exercise {
     }
 
     addResetListener() {
-        const resetButton = document.getElementById('reset');
-        resetButton.addEventListener('click', this.resetClickHandler);
-    }
-
-    resetClickHandler() {
-        startGame();
+        const resetButton = this.Dom.getElementById('reset');
+        resetButton?.addEventListener('click', resetClickHandler);
     }
 
     clickOnCell (row, col) {
@@ -99,15 +101,17 @@ export default class Exercise {
     }
 
     createingPrototypes(){
-        Window.prototype.CROSS = this.CROSS
-        Window.prototype.ZERO = this.ZERO
-        Window.prototype.EMPTY = this.EMPTY
-        Window.prototype.CurrentSymbol = this.CurrentSymbol
-        Window.prototype.WinningSymbol = this.WinningSymbol
-        Window.prototype.setSymbolInCell = this.setSymbolInCell
-        Window.prototype.isSymbolWon = this.isSymbolWon
-        Window.prototype.clickOnCell = this.clickOnCell
-        Window.prototype.Field = this.Field
+        if(global.window) {
+            Window.prototype.CROSS = this.CROSS
+            Window.prototype.ZERO = this.ZERO
+            Window.prototype.EMPTY = this.EMPTY
+            Window.prototype.CurrentSymbol = this.CurrentSymbol
+            Window.prototype.WinningSymbol = this.WinningSymbol
+            Window.prototype.setSymbolInCell = this.setSymbolInCell
+            Window.prototype.isSymbolWon = this.isSymbolWon
+            Window.prototype.clickOnCell = this.clickOnCell
+            Window.prototype.Field = this.Field
+        }
     }
 
 }
