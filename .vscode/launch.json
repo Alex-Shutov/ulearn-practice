@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}\\ulearn\\basic-web\\U02_BasicSyntax\\src\\10_exerciseTicTacToe"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        }
+    ]
+}

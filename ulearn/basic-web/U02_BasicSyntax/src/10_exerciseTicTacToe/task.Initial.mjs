@@ -27,7 +27,7 @@ export function cellClickHandler (row, col) {
      */
 }
 
-function makeAiTurn (aiSymbol) {
+export function makeAiTurn (aiSymbol) {
     //...
     // использовать setSymbolInCell()
     // console.log(`AI has done turn`);
@@ -35,26 +35,26 @@ function makeAiTurn (aiSymbol) {
     //...
 }
 
-function handleEndOfGame (pretenderSymbol, pretenderCell) {
+export function handleEndOfGame (pretenderSymbol, pretenderCell) {
     return false
 }
 
-function handleWin (pretenderSymbol, winningCells) {
+export function handleWin (pretenderSymbol, winningCells) {
 
 }
 
-function switchPlayer () {
+export function switchPlayer () {
     // currentSymbol  = ...
 }
 
 
 
-function hasEmptyCells (field = this.field) {
+export function hasEmptyCells (field = this.field) {
     /// return getEmptyCells(field).length > 0;
     return false
 }
 
-function getEmptyCells (field = this.field) {
+export function getEmptyCells (field = this.field) {
     // const result = [];
     // for (let i = 0; i < field.length; i++) {
     //     for (let j = 0; j < field.length; j++) {
