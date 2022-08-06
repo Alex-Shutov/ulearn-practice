@@ -22,7 +22,6 @@ export default class Exercise {
         return doc.getElementById('main')
     }
     startExercise() {
-        debugger
         this.renderGrid();
         this.CurrentSymbol = this.CROSS;
         this.WinningSymbol = null;

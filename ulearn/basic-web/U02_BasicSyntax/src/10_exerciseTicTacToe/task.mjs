@@ -14,12 +14,12 @@ export function startGame(){
 
 //#region Exercise
 export function cellClickHandler (row, col) {
-    if (exercise.WinningSymbol || exercise.CurrentSymbol !== CROSS) {
+    if (exercise.WinningSymbol || exercise.CurrentSymbol !== exercise.CROSS) {
         return;
     }
 
     const symbolInCell = exercise.getSymbolInCell(row, col);
-    if (symbolInCell !== EMPTY) {
+    if (symbolInCell !== exercise.EMPTY) {
         return;
     }
 
@@ -31,7 +31,7 @@ export function cellClickHandler (row, col) {
         const isEnded = handleEndOfGame(exercise.CurrentSymbol, {row: row, col: col});
         if (!isEnded) {
             switchPlayer();
-            makeAiTurn(ZERO);
+            makeAiTurn(exercise.ZERO);
         }
     }, 0);
 }
@@ -40,14 +40,13 @@ export function resetClickHandler() {
     startGame()
 }
 
-function makeAiTurn (aiSymbol) {
+export function makeAiTurn (aiSymbol) {
     const chosenCells = getEmptyCells();
 
     const randomIndex = Math.floor(Math.random()*chosenCells.length);
     const randomCell = chosenCells[randomIndex];
 
     exercise.setSymbolInCell(aiSymbol, randomCell.row, randomCell.col);
-    console.log(`AI has done turn`);
 
     setTimeout(() => {
         const isEnded = handleEndOfGame(exercise.CurrentSymbol, randomCell);
@@ -58,22 +57,24 @@ function makeAiTurn (aiSymbol) {
     }, 0);
 }
 
-function handleEndOfGame (pretenderSymbol, pretenderCell) {
+export function handleEndOfGame (pretenderSymbol, pretenderCell) {
     const winningCells = getWinningCells(pretenderCell.row, pretenderCell.col);
     if (winningCells) {
         handleWin(pretenderSymbol, winningCells);
         return true;
     }
     if (!hasEmptyCells()) {
-        handleDraw();
+        handleDraw();//! тоже поломано
 
         return true;
     }
     return false;
 }
 
-function handleWin (pretenderSymbol, winningCells) {
-    alert('Победил ' + pretenderSymbol);
+export function handleWin (pretenderSymbol, winningCells) {
+    //todo handleWin ломаный, лезть не буду чтоб ничего не сломать
+    //todo тесты корректны
+    alert('Победил ' + pretenderSymbol); //! alert is not defined, на клиенте наверно пофиксится
     winningSymbol = pretenderSymbol;
     for (const cell of winningCells) {
         setSymbolInCell(pretenderSymbol, cell.row, cell.col, 'red');
@@ -82,22 +83,22 @@ function handleWin (pretenderSymbol, winningCells) {
 
 }
 
-function switchPlayer () {
-    exercise.CurrentSymbol = exercise.CurrentSymbol === CROSS ? ZERO : CROSS;
+export function switchPlayer () {
+    exercise.CurrentSymbol = exercise.CurrentSymbol === exercise.CROSS ? exercise.ZERO : exercise.CROSS;
 }
 
 
 
-function hasEmptyCells () {
+export function hasEmptyCells () {
     return getEmptyCells().length > 0;
 }
 
-function getEmptyCells (field = exercise.Field) {
+export function getEmptyCells (field = exercise.Field) {
     const result = [];
     for (let i = 0; i < field.length; i++) {
         for (let j = 0; j < field.length; j++) {
             const symbolInCell = exercise.getSymbolInCell(i, j);
-            if (symbolInCell === EMPTY) {
+            if (symbolInCell === exercise.EMPTY) {
                 result.push({row: i, col: j});
             }
         }
@@ -105,12 +106,12 @@ function getEmptyCells (field = exercise.Field) {
     return result;
 }
 
-function getWinningCells (row, col) {
+export function getWinningCells (row, col) {
     const symbol = exercise.getSymbolInCell(row, col);
     return getWinningCellsAfterSymbol(symbol, row, col);
 }
 
-function getWinningCellsAfterSymbol (symbol, row, col) {
+export function getWinningCellsAfterSymbol (symbol, row, col) {
     const colCells = [];
     const rowCells = [];
     const diagonal1Cells = [];
